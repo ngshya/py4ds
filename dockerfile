@@ -13,7 +13,8 @@ RUN apt -y install \
  git \
  python3-pip \
  wget \
- openssh-server
+ openssh-server \
+ mc
 RUN yes | pip3 install --upgrade pip setuptools
 RUN yes | pip3 install --user --upgrade \
  pipreqs \
