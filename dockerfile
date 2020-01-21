@@ -45,4 +45,4 @@ RUN yes | pip3 install --user --upgrade \
  pytesseract
 RUN echo "PasswordAuthentication yes" >> /etc/ssh/sshd_config
 RUN echo "PermitRootLogin yes" >> /etc/ssh/sshd_config
-ENTRYPOINT /startup
+#ENTRYPOINT /startup
