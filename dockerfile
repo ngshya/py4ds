@@ -56,4 +56,5 @@ RUN yes | pip3 install --user --upgrade \
 RUN echo "PasswordAuthentication yes" >> /etc/ssh/sshd_config
 RUN echo "PermitRootLogin yes" >> /etc/ssh/sshd_config
 RUN echo "export PATH=/root/.local/bin/:\$PATH" >> /root/.bashrc 
+RUN echo "alias python='python3'" >> /root/.bashrc 
 #ENTRYPOINT /startup
