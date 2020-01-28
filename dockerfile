@@ -26,6 +26,7 @@ RUN yes | pip3 install --user --upgrade \
  pipreqs \
  coverage \
  pytest \
+ pytest-xdist \
  pytest-cov \
  sphinx \
  flask \
