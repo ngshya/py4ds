@@ -19,7 +19,10 @@ RUN yes | pip3 install --upgrade pip setuptools
 RUN yes | pip3 install --user --upgrade \
  pipreqs \
  coverage \
+ pytest \
+ pytest-cov \
  sphinx \
+ flask \
  pandas \
  numpy \
  scipy \
