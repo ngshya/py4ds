@@ -54,8 +54,8 @@ RUN yes | pip3 install --user --upgrade \
  imageio \
  opencv-python \
  pytesseract
-RUN echo "PasswordAuthentication yes" >> /etc/ssh/sshd_config
-RUN echo "PermitRootLogin yes" >> /etc/ssh/sshd_config
+#RUN echo "PasswordAuthentication yes" >> /etc/ssh/sshd_config
+#RUN echo "PermitRootLogin yes" >> /etc/ssh/sshd_config
 RUN echo "export PATH=/root/.local/bin/:\$PATH" >> /root/.bashrc 
 RUN echo ln -s /usr/bin/python3 /usr/bin/python
 #ENTRYPOINT /startup
